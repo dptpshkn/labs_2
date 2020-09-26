@@ -15,7 +15,7 @@ int main()
 и BC и их сумму.
 */
 #include <iostream>
-#include <cmath>
+#include <math.h>
 using namespace std;
 int main()
 {
@@ -26,5 +26,58 @@ int main()
     cout << ac << endl;
     cout << bc << endl;
     cout << ac + bc << endl;
+    return 0;
+}
+
+/*3.Задание: Даны три точки A, B, C на числовой оси. Точка C расположена
+между точками A и B. Найти произведение длин отрезков AC и BC*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x1,x2,x3,ac,bc;
+    cin >> x1 >> x2 >> x3;
+    ac = x2-x1;
+    bc = x3-x2;
+    cout << ac*bc;
+    return 0;
+}
+
+/*4.Задание: Даны координаты двух противоположных вершин прямоугольника:
+(x1, y1), (x2, y2). Стороны прямоугольника параллельны осям координат.
+Найти периметр и площадь данного прямоугольника.*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x1,x2,y1,y2,p,s,a,b;
+    cin >> x1 >> x2 >> y1 >> y2;
+    a=abs(x1-x2);
+    b=abs(y1-y2);
+    p=(a+b)*2;
+    s=a*b;
+    cout << p << endl;
+    cout << s << endl;
+    return 0;
+}
+
+/*5.Задание: Даны координаты трех вершин треугольника: (x1, y1), (x2, y2), (x3, y3). Найти его периметр и площадь*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x1,x2,x3,y1,y2,y3,p1,p2,s,a,b,c;
+    cin >> x1 >> x2 >> x3 >> y1 >> y2 >> y3;
+    a=sqrt(sqrt(x2-x1)+sqrt(y2-y1));
+    b=sqrt(sqrt(x3-x2)+sqrt(y3-y2));
+    c=sqrt(sqrt(x1-x3)+sqrt(y1-y3));
+    p1=(a+b+c)/2;
+    p2=a+b+c;
+    s=sqrt(p1*(p1-a)*(p1-b)*(p1-c));
+    cout << s << endl;
+    cout << p2 << endl;
     return 0;
 }
