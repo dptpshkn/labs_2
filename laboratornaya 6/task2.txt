@@ -1,0 +1,16 @@
+/*2.Даны переменные A, B, C. Изменить их значения,
+переместив содержимое A в B, B — в C, C — в A, и
+вывести новые значения переменных A, B, C.*/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,t;
+    a=1,b=2,c=3;
+    d=a;e=b;t=c;
+    b=d,c=e;a=t;
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+    return 0;
+}
