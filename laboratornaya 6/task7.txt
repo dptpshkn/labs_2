@@ -1,0 +1,17 @@
+/*7. Дано число A. Вычислить A15, используя две вспомогательные переменные
+и пять операций умножения.*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    a=2;
+    b=a*a;
+    c=a*b;
+    c=b*c;
+    b=c*c;
+    b=b*c;
+    cout << b;
+    return 0;
+}

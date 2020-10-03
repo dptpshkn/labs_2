@@ -1,0 +1,15 @@
+/*6. Дано число A. Вычислить A8 , используя вспомогательную переменную
+и три операции умножения.*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int a,b,c,e;
+    a=2;
+    b=a*a;
+    c=b*b;
+    e=c*c;
+    cout << e;
+    return 0;
+}
