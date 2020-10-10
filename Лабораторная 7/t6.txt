@@ -1,0 +1,17 @@
+/*6. Найти решение системы линейных уравнений вида 
+A1·x + B1·y = C1, 
+A2·x + B2·y = C2,*/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a1,b1,c1,a2,b2,c2,x,y,d;
+    cin >> a1 >> b1 >> c1; 
+    cin >> a2 >> b2 >> c2;
+    d=a1*b2-a2*b1;
+    x=(c1*b2-c2*b1)/d;
+    y=(a1*c2-a2*c1)/d;
+    cout << x << endl;
+    cout << y << endl;
+    return 0;
+}

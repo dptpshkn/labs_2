@@ -1,0 +1,12 @@
+/*5. Решить линейное уравнение A·x + B = 0,
+заданное своими коэффициентами A и B (коэффициент A не равен 0). */
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x,a,b;
+    a=5,b=20;
+    x=-b/a;
+    cout<<x;
+    return 0;
+}

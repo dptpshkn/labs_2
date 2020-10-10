@@ -1,0 +1,14 @@
+/*3. Известно, что X кг конфет стоит A рублей.
+Определить, сколько стоит 1 кг и Y кг этих же конфет.*/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x,a,y,o,r;
+    cin >> x >> a >> y;
+    o=a/x;
+    r=y*o;
+    cout<<o<<endl;
+    cout<<r<<endl;
+    return 0;
+}
