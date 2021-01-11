@@ -1,0 +1,71 @@
+/*2. Робот может перемещаться в четырех направлениях («С» — север, «З» — запад, «Ю» — юг, «В» — восток)
+и принимать три цифровые команды: 0 — продолжать движение, 1 — поворот налево, −1 — поворот направо.
+Дан символ C — исходное направление робота и целое число N — посланная ему команда.
+Вывести направление робота после выполнения полученной команды*/
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main (){
+    int n;
+    char c;
+    cout << "Direction:";
+    cin >> c;
+    cout << "Operation:";
+    cin >> n;
+    switch (c) {
+        case 'С':
+            switch (n) {
+                case 0:
+                    c='С';
+                    break;
+                case 1:
+                    c='З';
+                    break;
+                case -1:
+                    c='В';
+                    break;
+                }
+            break;
+        case 'В':
+            switch (n) {
+                case 1:
+                    c='С';
+                    break;
+                case 0:
+                    c='В';
+                    break;
+                case -1:
+                    c='Ю';
+                    break;
+                }
+        case 'Ю':
+            switch (n) {
+                case 1:
+                    c='В';
+                    break;
+                case 0:
+                    c='Ю';
+                    break;
+                case -1:
+                    c='З';
+                    break;
+            }
+            break;
+        case 'З':
+            switch (n) {
+                case 1:
+                    c='Ю';
+                    break;
+                case 0:
+                    c='З';
+                    break;
+                case -1:
+                    c='С';
+                    break;
+            }
+    }
+    cout << c;
+    return 0;
+}

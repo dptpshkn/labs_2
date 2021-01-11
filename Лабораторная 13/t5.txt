@@ -1,0 +1,26 @@
+/*5. Дано вещественное число A и целое число N (> 0).
+Используя один цикл, найти значение выражения 
+1 − A + A2 − A3 + . . . ± AN . 
+Условный оператор не использовать.
+*/
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float a;
+    cout<<"A:";
+    cin>>a;
+    int n;
+    cout<<"N:";
+    cin>>n;
+    float a2 = 1, res = 1;
+    int i;
+    for (i = 2; i <= n; ++i)
+    {
+        a2 *= -a;
+        res += a2;
+    }
+    cout<< res;
+}
