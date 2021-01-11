@@ -1,0 +1,26 @@
+/*2. Даны три числа. Найти сумму двух наибольших из них*/
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+ int a, b, c;
+ cout << "a:";
+ cin >> a;
+ cout << "b:";
+ cin >> b;
+ cout << "c:";
+ cin >> c;
+ if (b<=c&&b<=a) {
+ cout << a+c;
+ }
+ else {
+ if (a <= c && a <= b) {
+ cout << b + c;
+ }
+ else {
+ cout << b + a;
+ }
+ }
+}

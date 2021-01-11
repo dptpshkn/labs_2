@@ -1,0 +1,24 @@
+/*6. Даны целые числа a, b, c, являющиеся сторонами некоторого треугольника.
+Проверить истинность высказывания:
+«Треугольник со сторонами a, b, c является прямоугольным».*/
+#include <iostream>
+using namespace std;
+#include <math.h>
+
+int main()
+{
+   float a,b,c;
+   cout << "a: ";
+   cin >> a;
+   cout << "b: ";
+   cin >> b;
+   cout << "c: ";
+   cin >> c;
+   if ((c*c == a*a + b*b) || (a*a == b*b + c*c) || (b*b == a*a + c*c))
+   {
+       cout << "true";
+   } else {
+       cout << "false";
+   }
+ 
+}

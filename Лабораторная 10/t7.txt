@@ -1,0 +1,23 @@
+/*7. Даны целые числа a, b, c. Проверить истинность высказывания:
+«Существует треугольник со сторонами a, b, c».*/
+#include <iostream>
+using namespace std;
+#include <math.h>
+
+int main()
+{
+   float a,b,c;
+   cout << "a: ";
+   cin >> a;
+   cout << "b: ";
+   cin >> b;
+   cout << "c: ";
+   cin >> c;
+   if ((a+b) > c && (a+c) > b && (b+c) > a)
+   {
+       cout << "true";
+   } else {
+       cout << "false";
+   }
+ 
+}
